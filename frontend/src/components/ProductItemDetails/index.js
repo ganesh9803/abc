@@ -49,7 +49,7 @@ class ProductItemDetails extends Component {
       apiStatus: apiStatusConstants.inProgress,
     })
     const jwtToken = Cookies.get('jwt_token')
-    const apiUrl = `http://localhost:3000/products/${id}`
+    const apiUrl = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/products/${id}`
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,

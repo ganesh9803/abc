@@ -96,8 +96,10 @@ class AllProductsSection extends Component {
       this.state
     console.log(activeCategoryId)
     console.log(activeOptionId)
-    const apiUrl = `http://localhost:3000/products?sort_by=${activeOptionId}&activeCategoryId=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`;
+    const apiUrl = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}products?sort_by=${activeOptionId}&activeCategoryId=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`;
 
+    // const apiUrl = `http://localhost:3000/products?sort_by=${activeOptionId}&activeCategoryId=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`;
+    
     console.log(apiUrl)
     const options = {
       headers: {
