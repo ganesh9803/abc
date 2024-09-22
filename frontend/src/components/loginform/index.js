@@ -37,7 +37,7 @@ class Login extends Component {
     event.preventDefault();
     const { username, password } = this.state;
     const userDetails = { username, password };
-    const url = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/login_token`;
+    const url = 'http://localhost:3000/login_token'
     const options = {
       method: 'POST',
       headers: {

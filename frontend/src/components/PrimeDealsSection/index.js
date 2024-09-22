@@ -30,7 +30,7 @@ class PrimeDealsSection extends Component {
 
     const jwtToken = Cookies.get('jwt_token')
 
-    const apiUrl = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/prime_deals`
+    const apiUrl = 'http://localhost:3000/prime_deals'
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,
